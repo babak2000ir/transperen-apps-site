@@ -3,7 +3,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
-  background: #0078D4;
+  background: #505C6D; /* Business Central Gray */
   color: white;
 }
 
@@ -14,10 +14,17 @@
 }
 
 .cta-button {
-  background: #FF9800;
+  background: #FF9800; /* Appsmith Orange */
   color: white;
   padding: 0.5rem 1rem;
   border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.cta-button:hover {
+  background: #e68a00; /* Darker orange on hover */
 }
 
 .hero-section {
@@ -25,11 +32,12 @@
   justify-content: space-between;
   align-items: center;
   padding: 2rem;
-  background: #F5F5F5;
+  background: #f8f9fa; /* Light gray */
 }
 
 .hero-content h1 {
   font-size: 2.5rem;
+  color: #00B7C3; /* Business Central Teal */
 }
 
 .hero-image img {

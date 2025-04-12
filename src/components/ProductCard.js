@@ -6,13 +6,22 @@ function ProductCard({ title, description, link }) {
     <div style={{
       border: '1px solid #ddd',
       borderRadius: '8px',
-      padding: '1rem',
+      padding: '1.5rem',
       width: '300px',
-      boxShadow: '2px 2px 6px rgba(0,0,0,0.1)'
+      boxShadow: '0 4px 8px rgba(0,0,0,0.1)',
+      backgroundColor: 'white',
+      transition: 'transform 0.2s',
+      cursor: 'pointer'
     }}>
-      <h2>{title}</h2>
-      <p>{description}</p>
-      <Link to={link}>Learn More →</Link>
+      <h2 style={{ color: '#00B7C3' }}>{title}</h2>
+      <p style={{ color: '#505C6D', margin: '1rem 0' }}>{description}</p>
+      <Link to={link} style={{
+        color: '#FF9800',
+        textDecoration: 'none',
+        fontWeight: 'bold',
+        display: 'inline-block',
+        marginTop: '1rem'
+      }}>Learn More →</Link>
     </div>
   );
 }
